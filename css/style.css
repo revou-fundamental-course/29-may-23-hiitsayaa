@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 1em 0 1em;
+}
+
+.logo{
+    height: 3em;
+    padding: 10px 10px 10px 0px;
+}
+
+.nav-bar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-item{
+    padding: 10px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background: rgb(236, 242, 243);
+}
+
+.nav-bar:last-child{
+    border-right: none;
+}
+
+#hero-section{
+    height: 578px; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: 0% 80%;
+    color: black;
+    background-color: rgb(236, 242, 243);
+    font-size: large;
+}
+
+.hero1{
+    padding: 3em 0em 0em 1em;   
+    margin: 0;
+}
+
+.hero2{
+    padding-left: 38px;
+}
+
+#headquarters-section{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    margin: 2em 0em;
+    justify-content: center;
+}
+
+.headquarters-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em;  
+}
+
+.headquarters-image{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+#jakarta{
+    background-size: cover;
+    background-position: 50%;
+}
+
+#bandung{
+    background-size: cover;
+    background-position: 20%;
+}
+
+#surabaya{
+    background-size: cover;
+    background-position: 60%;
+}
+
+#messege-us-section{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(236, 242, 243);
+    display: flex;
+    justify-content: space-between;
+    margin : 0 2em 0 2em;
+}
+
+.form{
+    padding-left: 3em;
+}
+
+.submit{
+    width: 25em;
+    cursor: pointer;
+}
+
+
+.messege-output{
+    border: 1px solid black;
+    margin: 5em 3em 3em;
+    width: 500px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: end;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        justify-content: center;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    #messege-us-section{
+        flex-direction: column;
+    }
+
+    .form{
+        margin: auto;
+        padding: 0;
+    }
+
+    .head{
+        text-align: center;
+    }
+
+    .messege-output{
+        margin: 2em 1em 2em 1em;
+        padding: 1em;
+        width: auto;
+    }
+
+}

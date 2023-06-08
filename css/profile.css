@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 1em 0 1em;
+}
+
+.logo{
+    height: 3em;
+    padding: 10px 10px 10px 0px;
+}
+
+.nav-bar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-item{
+    padding: 10px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background: rgb(236, 242, 243);
+}
+
+.nav-bar:last-child{
+    border-right: none;
+}
+
+
+.profile-section{
+    text-align: center;
+    background-color: rgb(236, 242, 243);
+    border-radius: 20px;
+    margin: 0em 1em 0em 1em;
+    padding: 1em 0em 1em 0em;
+}
+
+.wrapper{
+    display: flex;
+    margin: 2em 0em;
+    justify-content: center;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em;  
+}
+
+.image{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+#profil{
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+.wrapper2{
+    display: flex;
+}
+
+.about-section{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(236, 242, 243);
+    border-radius: 20px;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 0em;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pict{
+    height: 15em;
+    width: 15em;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#photo{
+    margin-left: 1em;
+}
+
+.tombol{
+    display: none;
+}
+
+.about-company{
+    margin: 2em; 
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-container{
+        flex-direction: column;
+    }
+}
